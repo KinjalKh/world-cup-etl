@@ -1,0 +1,55 @@
+20-04-2024 09:47:36 AM - Task_2          - DEBUG    - READING LOG FILES
+20-04-2024 09:47:36 AM - Task_2          - DEBUG    - Configuration Loaded: {'mysql_config': {'user': 'kinjal', 'password': '12345', 'host': 'db.bhatol.in', 'port': 13306, 'database': 'project'}}
+20-04-2024 09:47:36 AM - Task_2          - DEBUG    - CONFIGURATION FILE: {'user': 'kinjal', 'password': '12345', 'host': 'db.bhatol.in', 'port': 13306, 'database': 'project'}
+20-04-2024 09:47:36 AM - Task_2          - DEBUG    - CONNECTING TO DATABASE
+20-04-2024 09:47:42 AM - Task_2          - INFO     - DATABASE CONNECTED
+20-04-2024 09:47:42 AM - Task_2          - DEBUG    - Total 6 files are found on assets folder.
+20-04-2024 09:47:42 AM - Task_2          - DEBUG    - WORKING ON: 2022_world_cup_groups.csv
+20-04-2024 09:47:42 AM - Task_2          - DEBUG    - table_name : 2022_world_cup_groups, location= assets/2022_world_cup_groups.csv
+20-04-2024 09:47:42 AM - Task_2          - DEBUG    - converted to dataframe
+20-04-2024 09:47:43 AM - Task_2          - DEBUG    - fields: ['`group`', '`team`', '`fifa_ranking`', '`created_by`']
+20-04-2024 09:47:44 AM - Task_2          - DEBUG    - INSERT QUERY: INSERT INTO 2022_world_cup_groups (`group`, `team`, `fifa_ranking`, `created_by`) VALUES (%s, %s, %s, %s)
+20-04-2024 09:47:44 AM - Task_2          - DEBUG    - Inserting data to table.
+20-04-2024 09:47:45 AM - Task_2          - DEBUG    - INSERTED 32 records on 2022_world_cup_groups Table
+20-04-2024 09:47:45 AM - Task_2          - DEBUG    - DATA INSERTION COMPLETED ON 2022_world_cup_groups
+20-04-2024 09:47:45 AM - Task_2          - DEBUG    - WORKING ON: 2022_world_cup_matches.csv
+20-04-2024 09:47:45 AM - Task_2          - DEBUG    - table_name : 2022_world_cup_matches, location= assets/2022_world_cup_matches.csv
+20-04-2024 09:47:45 AM - Task_2          - DEBUG    - converted to dataframe
+20-04-2024 09:47:46 AM - Task_2          - DEBUG    - fields: ['`year`', '`date`', '`stage`', '`home_team`', '`away_team`', '`host_team`', '`created_by`']
+20-04-2024 09:47:47 AM - Task_2          - DEBUG    - INSERT QUERY: INSERT INTO 2022_world_cup_matches (`year`, `date`, `stage`, `home_team`, `away_team`, `host_team`, `created_by`) VALUES (%s, %s, %s, %s, %s, %s, %s)
+20-04-2024 09:47:47 AM - Task_2          - DEBUG    - Inserting data to table.
+20-04-2024 09:47:48 AM - Task_2          - DEBUG    - INSERTED 64 records on 2022_world_cup_matches Table
+20-04-2024 09:47:48 AM - Task_2          - DEBUG    - DATA INSERTION COMPLETED ON 2022_world_cup_matches
+20-04-2024 09:47:48 AM - Task_2          - DEBUG    - WORKING ON: 2022_world_cup_squads.csv
+20-04-2024 09:47:48 AM - Task_2          - DEBUG    - table_name : 2022_world_cup_squads, location= assets/2022_world_cup_squads.csv
+20-04-2024 09:47:48 AM - Task_2          - DEBUG    - Converted to dataframe using latin1
+20-04-2024 09:47:48 AM - Task_2          - DEBUG    - fields: ['`team`', '`position`', '`player`', '`age`', '`caps`', '`goals`', '`wc_goals`', '`league`', '`club`', '`created_by`']
+20-04-2024 09:47:49 AM - Task_2          - DEBUG    - INSERT QUERY: INSERT INTO 2022_world_cup_squads (`team`, `position`, `player`, `age`, `caps`, `goals`, `wc_goals`, `league`, `club`, `created_by`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+20-04-2024 09:47:49 AM - Task_2          - DEBUG    - Inserting data to table.
+20-04-2024 09:47:51 AM - Task_2          - DEBUG    - INSERTED 831 records on 2022_world_cup_squads Table
+20-04-2024 09:47:51 AM - Task_2          - DEBUG    - DATA INSERTION COMPLETED ON 2022_world_cup_squads
+20-04-2024 09:47:51 AM - Task_2          - DEBUG    - WORKING ON: international_matches.csv
+20-04-2024 09:47:51 AM - Task_2          - DEBUG    - table_name : international_matches, location= assets/international_matches.csv
+20-04-2024 09:47:51 AM - Task_2          - DEBUG    - converted to dataframe
+20-04-2024 09:47:52 AM - Task_2          - DEBUG    - fields: ['`tournament`', '`date`', '`home_team`', '`home_goals`', '`away_goals`', '`away_team`', '`win_conditions`', '`home_stadium`', '`created_by`']
+20-04-2024 09:47:53 AM - Task_2          - DEBUG    - INSERT QUERY: INSERT INTO international_matches (`tournament`, `date`, `home_team`, `home_goals`, `away_goals`, `away_team`, `win_conditions`, `home_stadium`, `created_by`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+20-04-2024 09:47:53 AM - Task_2          - DEBUG    - Inserting data to table.
+20-04-2024 09:47:58 AM - Task_2          - DEBUG    - INSERTED 17769 records on international_matches Table
+20-04-2024 09:47:58 AM - Task_2          - DEBUG    - DATA INSERTION COMPLETED ON international_matches
+20-04-2024 09:47:58 AM - Task_2          - DEBUG    - WORKING ON: world_cups.csv
+20-04-2024 09:47:58 AM - Task_2          - DEBUG    - table_name : world_cups, location= assets/world_cups.csv
+20-04-2024 09:47:58 AM - Task_2          - DEBUG    - converted to dataframe
+20-04-2024 09:47:59 AM - Task_2          - DEBUG    - fields: ['`year`', '`host_country`', '`winner`', '`runners_up`', '`third`', '`fourth`', '`goals_scored`', '`qualified_teams`', '`matches_played`', '`created_by`']
+20-04-2024 09:48:00 AM - Task_2          - DEBUG    - INSERT QUERY: INSERT INTO world_cups (`year`, `host_country`, `winner`, `runners_up`, `third`, `fourth`, `goals_scored`, `qualified_teams`, `matches_played`, `created_by`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+20-04-2024 09:48:00 AM - Task_2          - DEBUG    - Inserting data to table.
+20-04-2024 09:48:01 AM - Task_2          - DEBUG    - INSERTED 22 records on world_cups Table
+20-04-2024 09:48:02 AM - Task_2          - DEBUG    - DATA INSERTION COMPLETED ON world_cups
+20-04-2024 09:48:02 AM - Task_2          - DEBUG    - WORKING ON: world_cup_matches.csv
+20-04-2024 09:48:02 AM - Task_2          - DEBUG    - table_name : world_cup_matches, location= assets/world_cup_matches.csv
+20-04-2024 09:48:02 AM - Task_2          - DEBUG    - converted to dataframe
+20-04-2024 09:48:02 AM - Task_2          - DEBUG    - fields: ['`year`', '`date`', '`stage`', '`home_team`', '`home_goals`', '`away_goals`', '`away_team`', '`win_conditions`', '`host_team`', '`created_by`']
+20-04-2024 09:48:03 AM - Task_2          - DEBUG    - INSERT QUERY: INSERT INTO world_cup_matches (`year`, `date`, `stage`, `home_team`, `home_goals`, `away_goals`, `away_team`, `win_conditions`, `host_team`, `created_by`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+20-04-2024 09:48:03 AM - Task_2          - DEBUG    - Inserting data to table.
+20-04-2024 09:48:04 AM - Task_2          - DEBUG    - INSERTED 900 records on world_cup_matches Table
+20-04-2024 09:48:05 AM - Task_2          - DEBUG    - DATA INSERTION COMPLETED ON world_cup_matches
+20-04-2024 09:48:05 AM - Task_2          - DEBUG    - CONNECTION CLOSED

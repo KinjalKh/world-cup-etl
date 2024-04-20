@@ -1,0 +1,9 @@
+{
+    "mysql_config":{
+        "user" : "kinjal",
+        "password" : "12345",
+        "host":"db.bhatol.in",
+        "port":13306,
+        "database":"project"
+    }
+}
